@@ -21,12 +21,12 @@ void InitH1(char* path_rootfile)
 	// pictures, graphics objects, detector geometries, tracks, events, etc..
 	// This file is now becoming the current directory.
 
-	// hfile = new TFile("../Test_2024_01_09_nNNPDF30_0_nNNPDF30_0_scl10_10_10_dir_5020_yminneg08_ymax08_R04_E2/ggdTest_2024_01_09_nNNPDF30_0_nNNPDF30_0_scl10_10_10_dir_5020_yminneg08_ymax08_R04_E2.root","RECREATE","");
+	// hfile = new TFile("../Cesar_20241024_Pbp_nNNPDF30_0_NNPDF40_nnlo_as_01180_0_scl10_10_10_dir_8160_ymin20_ymax42_R01_E001/ggdCesar_20241024_Pbp_nNNPDF30_0_NNPDF40_nnlo_as_01180_0_scl10_10_10_dir_8160_ymin20_ymax42_R01_E001.root","RECREATE","");
 	hfile = new TFile(path_rootfile,"RECREATE","");
 
   // Create some histograms 
-	hp20   = new TH1D("hp20","d#sigma^{#gamma}_{dir,TRUE}/dp_{T}^{#gamma}(-0.8<y<0.8)",1000,0.,250.);
-	hp21   = new TH1D("hp21","Photon(-0.8<y<0.8)Jet(-5.8<y<5.8)",1000,0.,250.);
+	hp20   = new TH1D("hp20","d#sigma^{#gamma}_{dir,TRUE}/dp_{T}^{#gamma}(2.0<y<4.2)",1000,0.,250.);
+	hp21   = new TH1D("hp21","Photon(2.0<y<4.2)Jet(-5.8<y<5.8)",1000,0.,250.);
 	hp22   = new TH1D("hp22","d#sigma^{#gamma}_{dir,TRUE}/dy^{#gamma}",200,-10.,10.);
 	hp40   = new TH1D("hp40","dsigmalo/dptgamma",13,xx1);
 	hp41   = new TH1D("hp41","dsigmanlo/dptgamma",13,xx2);

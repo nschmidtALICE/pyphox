@@ -18,22 +18,22 @@ void remplie(Int_t iprov,Double_t pt3,Double_t y3,Double_t ptjet_lead,Double_t y
             Double_t x_ll_plus,Double_t x_ll_moins,Double_t weight)
 {
 if (iprov ==11) {
-if  (-0.8 <=y3 && y3 <=0.8)
+if  (2.0 <=y3 && y3 <=4.2)
  {
   hp40->Fill(pt3,weight);
 }
 }
-if  (-0.8 <=y3 && y3 <=0.8)
+if  (2.0 <=y3 && y3 <=4.2)
  {
   hp20->Fill(pt3,weight);
 }
-if  ((-0.8 <=y3 && y3 <=0.8)
+if  ((2.0 <=y3 && y3 <=4.2)
  && (-5.8 <=yjet_lead && yjet_lead <=5.8)
 ) {
   hp21->Fill(pt3,weight);
 }
   hp22->Fill(y3,weight);
-if  (-0.8 <=y3 && y3 <=0.8)
+if  (2.0 <=y3 && y3 <=4.2)
  {
   hp41->Fill(pt3,weight);
 }

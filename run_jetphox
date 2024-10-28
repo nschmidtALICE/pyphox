@@ -7,7 +7,7 @@ import sys
 import subprocess
 from datetime import datetime
 
-ptbins = [1.5, 3., 5., 8., 12., 17., 23., 31., 40., 52., 66., 82., 100., 120., 140., 160., 180., 200., 220.]
+ptbins = [1.5, 3., 5., 8., 12., 17., 23.] #, 31., 40., 52., 66., 82., 100., 120., 140., 160., 180., 200., 220.]
 name = "default"
 # funcion that creates pthard bin folders (if they don't exist) and copies all needed files for building
 def createpthardbins():

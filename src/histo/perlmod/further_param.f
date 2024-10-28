@@ -4,8 +4,8 @@
 	implicit real*8 (a-h,l-z)
 	character*2 algorithm,merging,acceptance
 	ptgamma_min = 0.0
-	ymax = 0.8
-	ymin = -0.8
+	ymax = 4.2
+	ymin = 2.0
 	algorithm = 'kt'
 	merging = 'sn'
 	acceptance = 'gp'
